@@ -14,13 +14,23 @@ li {
 
 
 body {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	min-height: 100vh;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 main {
-	flex: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	felx-direction: column;
 }
 
@@ -31,6 +41,9 @@ nav {
 nav,
 footer
 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	background-color: #111111;
 }
@@ -38,9 +51,15 @@ footer
 nav section,
 footer section
 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	margin: auto;
-	flex: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 }
 
 nav section a,
@@ -48,7 +67,10 @@ footer section a,
 footer section p
 {
 	margin: auto;
-	flex: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	font: bold .9em/150% Helvetica,Arial,sans-serif;
 	color: #FAFAFA;
 }

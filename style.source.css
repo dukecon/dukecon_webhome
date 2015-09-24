@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+#Normalisation
+ul, ol, li, dl, dt, dd {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	display: list-item;
+	margin-left: 2em;
+}
+
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+	felx-direction: column;
+}
+
+nav {
+	height: 30px;	
+}
+
+nav,
+footer
+{
+	display: flex;
+	background-color: #111111;
+}
+
+nav section,
+footer section
+{
+	display: flex;
+	margin: auto;
+	flex: 1;
+}
+
+nav section a,
+footer section a,
+footer section p
+{
+	margin: auto;
+	flex: 1;
+	font: bold .9em/150% Helvetica,Arial,sans-serif;
+	color: #FAFAFA;
+}
