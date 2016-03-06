@@ -1,119 +1,130 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" href="style.css">
-	<!-- TOOD, use link when favicon is not in the root folder -->
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-	<title>DukeCon</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="DukeCon - The Community Conference App">
+  <meta name="author" content="JUG Darmstadt">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<title>DukeCon - The Community Conference App</title>
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Custom styles for this template -->
+  <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<img alt="logo" src="dukes.jpg">
-		<h1>DukeCon Project Site</h1>
-		<!-- may move this to the end later for mobile device usage -->
-		<nav>
-			<section><a href="index.html">Home</a></section>
-			<section><a href="links.html">Developer</a></section>
-			<section><a href="impressum.html">Impressum (DE)</a></section>
-		</nav>
-	</header>
-	<main role="main">
-		<section>
-		<article>
-			<h1>Developer</h1>
-			<h2>Useful Links</h2>
-			<ul>
-				<li><a href="impressum.html">Contact Project Lead (DE)</a></li>
-				<li><a href="https://groups.google.com/forum/#!forum/dukecon">DukeCon
-						Google Group</a></li>
-				<li>Skype: DukeCon</li>
-				<li><a href="https://github.com/dukecon">DukeCon GitHub Projekt</a>:
-					<ul>
-						<li><a href="https://github-issue-mover.appspot.com/">Github Issue Mover</a></li>
-					</ul>
-				</li>
-				<li>Server (JSON):
-					<ul>
-						<li>Latest:
-							<ul>
-								<li><a href="https://dev.dukecon.org/latest/rest/talks">Talks</a></li>
-								<li>Speaker ...</li>
-							</ul>
-						</li>
-						<li>Testdata:
-							<ul>
-								<li><a href="https://dev.dukecon.org/testdata/rest/talks">Talks</a></li>
-								<li>Speaker ...</li>
-							</ul>
-						</li>
-						<li>Testing:
-							<ul>
-								<li><a href="https://dev.dukecon.org/testing/rest/talks">Talks</a></li>
-								<li>Speaker ...</li>
-							</ul>
-						</li>
-						<li>Release:
-							<ul>
-								<li><a href="https://dev.dukecon.org/release/rest/talks">Talks</a></li>
-								<li>Speaker ...</li>
-							</ul>
-						</li>
-						<li>Production:
-							<ul>
-								<li><a href="https://dukecon.org/javaland/rest/talks">Talks</a></li>
-								<li>Speaker ...</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>Clients:
-					<ul>
-						<li>HTML5:
-							<ul>
-								<li><a href="https://dev.dukecon.org/latest/">Latest (latest with live data)</a></li>
-								<li><a href="https://dev.dukecon.org/latest/test/SpecRunner.html">Latest Test Suite</a></li>
-								<li><a href="https://dev.dukecon.org/testdata/">Testdata (latest with test data)</a></li>
-								<li><a href="https://dev.dukecon.org/testing/">Testing (testing with live data)</a></li>
-								<li><a href="https://dev.dukecon.org/release/">Release (Release candidate with live data)</a></li>
-								<li><a href="https://dukecon.org/javaland/">Production</a></li>
-							</ul>
-						</li>
-						<li><a
-							href="https://www.dropbox.com/s/hsq3emh2ekjsq10/dukecon-flex-core.apk?dl=0">Flex
-								Client</a> (Actually Android only -> install APK manually)</li>
-						<li><a href="https://dev.dukecon.org/jenkins/job/dukecon_cordova_develop/ws/platforms/android/build/outputs/apk/android-debug.apk">Cordova Client</a> (Actually Android only)</li>
-						<li><a href="http://dukecon.meteor.com">Meteor</a></li>
-					</ul>
-				</li>
-				<li>Authentication & Authorisation (via <a href="http://keycloak.jboss.org">Keycloak</a>):
-					<ul>
-						<li><a href="https://keycloak.dukecon.org/auth/realms/dukecon-developer/account">Developer</a> (http://localhost:8080)</li>
-						<li><a
-							href="https://keycloak.dukecon.org/auth/realms/dukecon-latest/account">Latest</a></li>
-						<li><a
-							href="https://keycloak.dukecon.org/auth/realms/dukecon-testing/account">Testing</a></li>
-					</ul>
-				</li>
-				<li>Infrastructure:
-					<ul>
-						<li><a href="https://dev.dukecon.org/jenkins/">Jenkins</a>
-							(<a
-							href="https://dev.dukecon.org/jenkins/view/Build%20Pipeline%20Develop/">Build
-								Pipeline (Develop)</a> / <a
-									href="https://dev.dukecon.org/jenkins/view/Build%20Pipeline%20Release/">Build
-								Pipeline (Release)</a>)</li>
-						<li><a href="https://dev.dukecon.org/nexus/">Nexus</a></li>
-					</ul>
-				</li>
-			</ul>
-		</article>
-		</section>
-	</main>
-	<footer>
-		<section><p>© 2014-2015 by JUG DA et al.</p></section>
-		<section><a href="impressum.html">Imprint/Impressum (DE)</a></section>
-	</footer>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">DukeCon Project</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="./index.html" >Home</a></li>
+					<li class="active"><a href="./links.html">Developer Resources</a></li>
+					<li><a href="./impressum.html">Imprint (DE)</a></li>
+				</ul>
+      </div>
+    </div>
+  </nav>
+
+	<div class="container">
+
+		<h1>Developer Resources</h1>
+
+		<h3>Useful Links</h3>
+
+		<ul>
+			<li><a href="impressum.html">Contact Project Lead (DE)</a></li>
+			<li><a href="https://groups.google.com/forum/#!forum/dukecon">DukeCon Google Group</a></li>
+			<li>Skype: DukeCon</li>
+			<li><a href="https://github.com/dukecon">DukeCon GitHub Projekt</a>:
+				<ul>
+					<li><a href="https://github-issue-mover.appspot.com/">Github Issue Mover</a></li>
+				</ul>
+			</li>
+			<li>Server (JSON):
+				<ul>
+					<li>Latest:
+						<ul>
+							<li><a href="https://dev.dukecon.org/latest/rest/talks">Talks</a></li>
+							<li>Speaker ...</li>
+						</ul>
+					</li>
+					<li>Testdata:
+						<ul>
+							<li><a href="https://dev.dukecon.org/testdata/rest/talks">Talks</a></li>
+							<li>Speaker ...</li>
+						</ul>
+					</li>
+					<li>Testing:
+						<ul>
+							<li><a href="https://dev.dukecon.org/testing/rest/talks">Talks</a></li>
+							<li>Speaker ...</li>
+						</ul>
+					</li>
+					<li>Release:
+						<ul>
+							<li><a href="https://dev.dukecon.org/release/rest/talks">Talks</a></li>
+							<li>Speaker ...</li>
+						</ul>
+					</li>
+					<li>Production:
+						<ul>
+							<li><a href="https://dukecon.org/javaland/rest/talks">Talks</a></li>
+							<li>Speaker ...</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>Clients:
+				<ul>
+					<li>HTML5:
+						<ul>
+							<li><a href="https://dev.dukecon.org/latest/">Latest (latest with live data)</a></li>
+							<li><a href="https://dev.dukecon.org/latest/test/SpecRunner.html">Latest Test Suite</a></li>
+							<li><a href="https://dev.dukecon.org/testdata/">Testdata (latest with test data)</a></li>
+							<li><a href="https://dev.dukecon.org/testing/">Testing (testing with live data)</a></li>
+							<li><a href="https://dev.dukecon.org/release/">Release (Release candidate with live data)</a></li>
+							<li><a href="https://dukecon.org/javaland/">Production</a></li>
+						</ul>
+					</li>
+					<li><a href="https://www.dropbox.com/s/hsq3emh2ekjsq10/dukecon-flex-core.apk?dl=0">Flex Client</a> (Currently Android only -> install APK manually)</li>
+					<li><a href="https://dev.dukecon.org/jenkins/job/dukecon_cordova_develop/ws/platforms/android/build/outputs/apk/android-debug.apk">Cordova Client</a> (Currently Android only)</li>
+					<li><a href="http://dukecon.meteor.com">Meteor</a></li>
+				</ul>
+			</li>
+			<li>Authentication &amp; Authorisation (via <a href="http://keycloak.jboss.org">Keycloak</a>):
+				<ul>
+					<li><a href="https://keycloak.dukecon.org/auth/realms/dukecon-developer/account">Developer</a> (http://localhost:8080)</li>
+					<li><a href="https://keycloak.dukecon.org/auth/realms/dukecon-latest/account">Latest</a></li>
+					<li><a href="https://keycloak.dukecon.org/auth/realms/dukecon-testing/account">Testing</a></li>
+				</ul>
+			</li>
+			<li>Infrastructure:
+				<ul>
+					<li><a href="https://dev.dukecon.org/jenkins/">Jenkins</a>
+						(<a href="https://dev.dukecon.org/jenkins/view/Build%20Pipeline%20Develop/">Build Pipeline (Develop)</a> /
+						 <a href="https://dev.dukecon.org/jenkins/view/Build%20Pipeline%20Release/">Build Pipeline (Release)</a>)
+					 </li>
+					<li><a href="https://dev.dukecon.org/nexus/">Nexus</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<hr/>
+
+		<footer>
+			<p>&copy; 2015-2016 by <a href="http://jug-da.de">JUG DA</a> et al.</p>
+		</footer>
+	</div>
 </body>
 </html>

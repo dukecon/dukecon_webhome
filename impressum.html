@@ -1,65 +1,82 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="stylesheet" href="style.css">
-	<!-- TOOD, use link when favicon is not in the root folder -->
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-	<title>DukeCon Impressum</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="DukeCon - The Community Conference App">
+  <meta name="author" content="JUG Darmstadt">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<title>DukeCon - The Community Conference App</title>
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Custom styles for this template -->
+  <link href="./style.css" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<img alt="logo" src="dukes.jpg">
-		<h1>DukeCon Project Site</h1>
-		<!-- may move this to the end later for mobile device usage -->
-		<nav>
-			<section><a href="index.html">Home</a></section>
-			<section><a href="links.html">Developer</a></section>
-			<section><a href="impressum.html">Impressum (DE)</a></section>
-		</nav>
-	</header>
-	<main role="main">
-		<section>
-		<article>
-			<h1>Kontakt - Impressum</h1>
-			<h2>Anbieterkennzeichnung gemäß §5 TMG:</h2>
-			<table cellspacing="10">
-				<tr>
-					<td></td>
-					<td>Gerd Aschemann</td>
-				</tr>
-				<tr>
-					<td valign="top">Adresse:</td>
-					<td>Lilienthalstr. 9<br> D-64347 Griesheim
-					</td>
-				</tr>
-				<tr>
-					<td>E-Mail:</td>
-					<td><a href="mailto:info@dukecon.org">info@dukecon.org</a></td>
-				</tr>
-				<tr>
-					<td>Telefon:</td>
-					<td>+49-173-3264070</td>
-				</tr>
-				<tr>
-					<td>USt.-Id.:</td>
-					<td>DE 175604214</td>
-				</tr>
-				<tr>
-					<td colspan="2">Es gilt das Recht der Bundesrepublik
-						Deutschland</td>
-				</tr>
-				<tr>
-					<td colspan="2">Gerichtsstand ist Darmstadt</td>
-				</tr>
-			</table>
-		</article>
-		</section>
-	</main>
-	<footer>
-		<section><p>© 2014-2015 by JUG DA et al.</p></section>
-		<section><a href="impressum.html">Imprint/Impressum (DE)</a></section>
-	</footer>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">DukeCon Project</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="./index.html" >Home</a></li>
+					<li><a href="./links.html">Developer Resources</a></li>
+					<li class="active"><a href="./impressum.html">Imprint (DE)</a></li>
+				</ul>
+      </div>
+    </div>
+  </nav>
+
+	<div class="container">
+
+		<h1>Kontakt - Impressum</h1>
+
+		<h3>Anbieterkennzeichnung gemäß §5 TMG:</h3>
+
+		<table class="table">
+			<tr>
+				<td></td>
+				<td>Gerd Aschemann</td>
+			</tr>
+			<tr>
+				<th>Adresse:</th>
+				<td>Lilienthalstr. 9<br> D-64347 Griesheim
+				</td>
+			</tr>
+			<tr>
+				<th>E-Mail:</th>
+				<td><a href="mailto:info@dukecon.org">info@dukecon.org</a></td>
+			</tr>
+			<tr>
+				<th>Telefon:</th>
+				<td>+49-173-3264070</td>
+			</tr>
+			<tr>
+				<th>USt.-Id.:</th>
+				<td>DE 175604214</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					Es gilt das Recht der Bundesrepublik Deutschland<br/>
+					Gerichtsstand ist Darmstadt
+				</td>
+			</tr>
+		</table>
+
+		<hr/>
+
+		<footer>
+			<p>&copy; 2015-2016 by <a href="http://jug-da.de">JUG DA</a> et al.</p>
+		</footer>
+	</div>
 </body>
 </html>

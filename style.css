@@ -1,76 +1,22 @@
-@CHARSET "UTF-8";
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 
-#Normalisation
-ul, ol, li, dl, dt, dd {
-	display: block;
-	padding: 0;
-	margin: 0;
-}
-
-li {
-	display: list-item;
-	margin-left: 2em;
-}
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+@-webkit-viewport { width: device-width; }
+@-moz-viewport    { width: device-width; }
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
 
 
+/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	min-height: 100vh;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-}
-
-main {
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
-	felx-direction: column;
-}
-
-nav {
-	height: 30px;	
-}
-
-nav,
-footer
-{
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	background-color: #111111;
-}
-
-nav section,
-footer section
-{
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	margin: auto;
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
-}
-
-nav section a,
-footer section a,
-footer section p
-{
-	margin: auto;
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
-	font: bold .9em/150% Helvetica,Arial,sans-serif;
-	color: #FAFAFA;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
