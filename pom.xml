@@ -8,10 +8,13 @@
 	<name>DukeCon Webhome</name>
 	<description>DukeCon Website Home Project</description>
 	<build>
-		<finalName>dukecon-webhome</finalName>
+		<!-- Set finalName without version -->
+		<finalName>${project.artifactId}</finalName>
 	</build>
 	<properties>
+		<!-- Don't let your Mac use a crazy non-standard encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- Prevent build failing on empty or non-java project -->
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 	</properties>
 </project>
