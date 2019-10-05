@@ -1,0 +1,66 @@
+:jbake-type: page
+:jbake-title: Developers
+:jbake-status: published
+
+== Developer Resources
+
+=== Useful Links
+
+* link:impressum.html[Contact Project Lead (DE)]
+* https://groups.google.com/forum/#!forum/dukecon[DukeCon Google Group]
+* https://github.com/dukecon[DukeCon GitHub Project]:
+** https://github-issue-mover.appspot.com/[Github Issue Mover]
+* Documentation (work in progress):
+** Architecture
+*** https://dev.dukecon.org/jenkins/job/dukecon-doc/ws/target/generated-docs/de/index.html[German]
+*** https://dev.dukecon.org/jenkins/job/dukecon-doc/ws/target/generated-docs/en/index.html[English]
+** REST API
+*** Documentation currently not available
+*** Swagger file currently not available
+* Server (JSON):
+** Latest:
+*** https://latest.dukecon.org/conferences[Overview of all conferences on this server]
+*** https://latest.dukecon.org/javaland/2019/rest/conferences/javaland2019[JavaLand 2019]
+*** https://latest.dukecon.org/javaland/2018/rest/conferences/javaland2018[JavaLand 2018]
+*** https://latest.dukecon.org/javaland/2017/rest/conferences/javaland2017[JavaLand 2017]
+*** https://latest.dukecon.org/javaland/2016/rest/conferences/javaland2016[JavaLand 2016]
+*** https://latest.dukecon.org/info/server[Git Info (Server)]
+*** https://latest.dukecon.org/health/server[Health Check (Server)]
+*** https://latest.dukecon.org/info/feedback[Git Info (Feedback)]
+*** https://latest.dukecon.org/health/feedback[Health Check (Feedback)]
+** Testing:
+*** https://testing.dukecon.org/conferences[Overview of all conferences on this server]
+*** https://testing.dukecon.org/javaland/2019/rest/conferences/javaland2019[JavaLand 2019]
+*** https://testing.dukecon.org/javaland/2018/rest/conferences/javaland2018[JavaLand 2018]
+*** https://testing.dukecon.org/javaland/2017/rest/conferences/javaland2017[JavaLand 2017]
+*** https://testing.dukecon.org/javaland/2016/rest/conferences/javaland2016[JavaLand 2016]
+*** https://testing.dukecon.org/info/server[Git Info (Server)]
+*** https://testing.dukecon.org/health/server[Health Check (Server)]
+*** https://testing.dukecon.org/info/feedback[Git Info (Feedback)]
+*** https://testing.dukecon.org/health/feedback[Health Check (Feedback)]
+** Production:
+*** https://programm.javaland.eu/conferences[Overview of all conferences on Javaland server]
+*** https://programm.javaland.eu/2019/rest/conferences/javaland2019[JavaLand 2019]
+*** https://programm.javaland.eu/2018/rest/conferences/javaland2018[JavaLand 2018]
+*** https://programm.javaland.eu/2017/rest/conferences/javaland2017[JavaLand 2017]
+*** https://programm.javaland.eu/2016/rest/conferences/javaland2016[JavaLand 2016]
+*** https://programm.javaland.eu/info/server[Javaland Git Info (Server)]
+*** https://programm.javaland.eu/health/server[Javaland Health Check (Server)]
+*** https://programm.javaland.eu/info/feedback[Javaland Git Info (Feedback)]
+*** https://programm.javaland.eu/health/feedback[Javaland Health Check (Feedback)]
+* Clients:
+** HTML5:
+*** https://programm.javaland.eu/2019/[JavaLand 2019 (Production)]
+*** https://programm.javaland.eu/2018/[JavaLand 2018 (Production)]
+*** https://programm.javaland.eu/2017/[JavaLand 2017 (Production)]
+*** https://dukecon.org/javaland/[JavaLand 2016 (Production)]
+*** https://latest.dukecon.org/javaland/2019/[JavaLand 2019 (latest with live data)]
+** https://dev.dukecon.org/jenkins/job/dukecon_android/job/develop/lastSuccessfulBuild/artifact/mobile-ui-javaland-debug.apk[Android App]
+** https://dev.dukecon.org/jenkins/job/dukecon_cordova_develop/ws/platforms/android/build/outputs/apk/android-debug.apk[Cordova Client] (Currently Android only)
+* Authentication & Authorisation (via http://keycloak.jboss.org[Keycloak]):
+** https://keycloak.dukecon.org/auth/realms/dukecon-developer/account[Developer] (http://localhost:8080)
+** https://keycloak.dukecon.org/auth/realms/dukecon-latest/account[Latest]
+** https://keycloak.dukecon.org/auth/realms/dukecon-testing/account[Testing]
+* Infrastructure:
+** https://dev.dukecon.org/jenkins/[Jenkins]
+** https://dev.dukecon.org/nexus/[Nexus]

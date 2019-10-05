@@ -10,9 +10,11 @@
     <properties>
         <!-- Don't let your Mac use a crazy non-standard encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- Prevent build failing on empty or non-java project -->
-        <failOnMissingWebXml>false</failOnMissingWebXml>
-        <jbake-maven-plugin.version>0.3.1</jbake-maven-plugin.version>
+
+        <!-- Dependency and Plugin Versions-->
+        <asciidoctorj.version>1.5.6</asciidoctorj.version>
+        <groovy-templates.version>2.4.14</groovy-templates.version>
+        <jbake-maven-plugin.version>0.4.0-SNAPSHOT</jbake-maven-plugin.version>
     </properties>
     <build>
         <!-- Set finalName without version -->
@@ -23,6 +25,18 @@
                 <groupId>org.jbake</groupId>
                 <artifactId>jbake-maven-plugin</artifactId>
                 <version>${jbake-maven-plugin.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.asciidoctor</groupId>
+                        <artifactId>asciidoctorj</artifactId>
+                        <version>${asciidoctorj.version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.codehaus.groovy</groupId>
+                        <artifactId>groovy-templates</artifactId>
+                        <version>${groovy-templates.version}</version>
+                    </dependency>
+                </dependencies>
                 <executions>
                     <execution>
                         <id>default-generate</id>
