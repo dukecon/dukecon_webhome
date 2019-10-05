@@ -20,4 +20,4 @@ http://programm.javaland.eu/2019/[image:images/JavaLand-2019-Banner.jpg[Javaland
 
 https://apachecon.com/[ApacheCon Website]
 
-https://www.apachecon.com/acna19/s/[image:/images/acna19.png[ApacheCon 2016,width=600]]
+https://www.apachecon.com/acna19/s/[image:images/acna19.png[ApacheCon 2016,width=600]]
