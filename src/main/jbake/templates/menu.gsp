@@ -4,7 +4,10 @@
         title: 'DukeCon',
         entries: [
           'Conferences': 'conferences',
-          'Developers': 'links',
+          'Developers': [
+                  'Clients': 'developers/clients',
+                  'Links': 'links'
+          ],
           'Docs (External)': 'https://dev.dukecon.org/jenkins/job/dukecon-doc/ws/target/generated-docs/de/index.html',
           'Imprint (DE)': 'impressum',
         ]
