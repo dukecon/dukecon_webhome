@@ -10,7 +10,7 @@
           ],
           'Architecture': [
                   '1. Introduction and Goals': 'architecture/01_introduction_and_goals',
-                  '2. Architecture Constraints': 'architecture/02_architecture_constrains',
+                  '2. Architecture Constraints': 'architecture/02_architecture_constraints',
                   '3. System Scope and Context': 'architecture/03_system_scope_and_context',
                   '4. Solution Strategy': 'architecture/04_solution_strategy',
                   '5. Building Block View': 'architecture/05_building_block_view',
