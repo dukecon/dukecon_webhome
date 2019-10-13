@@ -1,3 +1,3 @@
-[submodule "references/--force"]
-	path = references/--force
+[submodule "references/dukecon"]
+	path = references/dukecon
 	url = git@github.com:dukecon/dukecon.git
