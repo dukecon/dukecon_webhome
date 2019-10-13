@@ -10,6 +10,6 @@ include::../../../../../references/dukecon/src/main/asciidoc/en/12_glossary.adoc
 
 [cols="2"]
 |===
-| Prev: link:11_techincal_risks.html[11. Technical Risks]
+| Prev: link:11_technical_risks.html[11. Technical Risks]
 | Next: -
 |===

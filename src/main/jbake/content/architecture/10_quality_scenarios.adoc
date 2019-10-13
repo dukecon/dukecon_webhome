@@ -11,5 +11,5 @@ include::../../../../../references/dukecon/src/main/asciidoc/en/10_quality_scena
 [cols="2"]
 |===
 | Prev: link:09_design_decisions.html[9. Design Decisions]
-| Next: link:11_techincal_risks.html[11. Technical Risks]
+| Next: link:11_technical_risks.html[11. Technical Risks]
 |===
