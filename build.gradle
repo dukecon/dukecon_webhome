@@ -23,6 +23,10 @@ jbake {
     destDirName = 'docs/html5/site'
     configuration['asciidoctor.option.requires'] = "asciidoctor-diagram"
 }
+bakePreview {
+    port = '8820'
+}
+
 //end::jbakeconfig[]
 
 /**
