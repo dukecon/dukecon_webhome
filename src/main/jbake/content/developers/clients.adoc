@@ -1,0 +1,22 @@
+:jbake-type: page
+:jbake-title: Clients
+:jbake-status: published
+
+= Clients
+
+== Web
+
+* https://programm.javaland.eu/2019[JavaLand 2017]
+* https://programm.javaland.eu/2018[JavaLand 2018]
+* https://latest.dukecon.org/pwa/javaland/2018[latest with live data]
+
+== Native mobile
+
+=== Android
+
+* https://play.google.com/store/apps/details?id=org.dukecon.android.ui.javaland&hl=en_US&utm_source=dukecon&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1[image:google-play-badge.png[Get it on play Store]]
+* https://github.com/dukecon/dukecon_android/tree/javaland-2019-7[Native Android client]
+
+=== Multiplatform
+* https://github.com/dukecon/dukecon_mobile[Kotlin multiplatfrom native client Android]
+
