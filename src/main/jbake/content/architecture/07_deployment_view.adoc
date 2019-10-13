@@ -1,0 +1,15 @@
+:jbake-type: page_toc
+:jbake-title: 07 Deployment View
+:jbake-status: published
+
+:toc: left
+
+include::../../../../../references/dukecon/src/main/asciidoc/en/07_deployment_view.adoc[]
+
+---
+
+[cols="2"]
+|===
+| Prev: link:06_runtime_view.html[6. Runtime View]
+| Next: link:08_concepts.html[8. Concepts]
+|===

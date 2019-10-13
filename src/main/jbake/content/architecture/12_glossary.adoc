@@ -1,0 +1,15 @@
+:jbake-type: page_toc
+:jbake-title: 12 Glossary
+:jbake-status: published
+
+:toc: left
+
+include::../../../../../references/dukecon/src/main/asciidoc/en/12_glossary.adoc[]
+
+---
+
+[cols="2"]
+|===
+| Prev: link:11_techincal_risks.html[11. Technical Risks]
+| Next: -
+|===

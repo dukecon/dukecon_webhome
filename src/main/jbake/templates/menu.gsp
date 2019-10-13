@@ -8,7 +8,20 @@
                   'Clients': 'developers/clients',
                   'Links': 'links'
           ],
-          'Docs (External)': 'https://dev.dukecon.org/jenkins/job/dukecon-doc/ws/target/generated-docs/de/index.html',
+          'Architecture': [
+                  '1. Introduction and Goals': 'architecture/01_introduction_and_goals',
+                  '2. Architecture Constraints': 'architecture/02_architecture_constrains',
+                  '3. System Scope and Context': 'architecture/03_system_scope_and_context',
+                  '4. Solution Strategy': 'architecture/04_solution_strategy',
+                  '5. Building Block View': 'architecture/05_building_block_view',
+                  '6. Runtime View': 'architecture/06_runtime_view',
+                  '7. Deployment View': 'architecture/07_deployment_view',
+                  '8. Concepts': 'architecture/08_concepts',
+                  '9. Design Decisions': 'architecture/09_design_decisions',
+                  '10. Quality Scenarios': 'architecture/10_quality_scenarios',
+                  '11. Technical Risks': 'architecture/11_technical_risks',
+                  '12. Glossary': 'architecture/12_glossary',
+          ],
           'Imprint (DE)': 'impressum',
         ]
     ]

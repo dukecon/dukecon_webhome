@@ -1,0 +1,15 @@
+:jbake-type: page_toc
+:jbake-title: 11 Technical Risks
+:jbake-status: published
+
+:toc: left
+
+include::../../../../../references/dukecon/src/main/asciidoc/en/11_technical_risks.adoc[]
+
+---
+
+[cols="2"]
+|===
+| Prev: link:10_quality_scenarios.html[10. Quality Scenarios]
+| Next: link:12_glossary.html[12. Glossary]
+|===
