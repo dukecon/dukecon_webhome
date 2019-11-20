@@ -1,38 +1,47 @@
 @Library('jenkins-library@master') _
 
-properties(
-    [
-        buildDiscarder(
-            logRotator(
-                daysToKeepStr: '5',
-                numToKeepStr: '5'
-            )
-        ),
-	disableConcurrentBuilds()
-    ]
-)
-
-// Every jenkins file should start with either a Declarative or Scripted Pipeline entry point.
-node {
-    //Utilizing a try block so as to make the code cleaner and send slack notification in case of any error
-    try {
-        // Global variable declaration
-        def project = 'dukecon_webhome'
-        
-        // Stage, is to tell the Jenkins that this is the new process/step that needs to be executed
-        stage('Checkout') {
-            // Pull the code from the repo
-            checkout scm
+pipeline {
+    agent {
+        node {
+            label 'docker'
         }
+    }
 
+    options {
+        disableConcurrentBuilds()
+        buildDiscarder(logRotator(numToKeepStr: '5', daysToKeepStr: '5'))
+    }
+
+    triggers {
+        pollSCM('*/3 * * * *')
+    }
+
+    stages {
         stage('Generate static pages') {
-            sh("./gradlew clean bake")
-        }       
-
-    } catch (e) {
-        currentBuild.result = "FAILED"
-        throw e
-    } finally {
-        sendNotification currentBuild.result
+            steps {
+                sh("./gradlew clean bake")
+            }
+        }
+        stage('Publish static pages') {
+            steps {
+                publishHTML(target: [allowMissing         : true,
+                                     alwaysLinkToLastBuild: false,
+                                     keepAll              : true,
+                                     reportDir            : 'build/docs/html5/site/',
+                                     reportFiles          : 'index.html',
+                                     reportName           : 'Web Site'])
+            }
+        }
+    }
+    post {
+        always {
+            sendNotification currentBuild.result
+        }
+        failure {
+            // notify users when the Pipeline fails
+            mail to: 'gerd@aschemann.net',
+                    subject: "Failed DukeCon WebHome Pipeline: ${currentBuild.fullDisplayName}",
+                    body: "Something is wrong with ${env.BUILD_URL}"
+        }
     }
 }
