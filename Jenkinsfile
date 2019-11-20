@@ -17,22 +17,23 @@ pipeline {
     }
 
     stages {
-        stage('Generate static pages') {
+        stage('Generate Static Pages') {
             steps {
                 sh("./gradlew clean bake")
             }
         }
-        stage('Publish static pages') {
+        stage('Publish Static Pages') {
             steps {
                 publishHTML(target: [allowMissing         : true,
                                      alwaysLinkToLastBuild: false,
                                      keepAll              : true,
                                      reportDir            : 'build/docs/html5/site/',
                                      reportFiles          : 'index.html',
-                                     reportName           : 'Web Site'])
+                                     reportName           : 'Published Static Pages'])
             }
         }
     }
+
     post {
         always {
             sendNotification currentBuild.result
