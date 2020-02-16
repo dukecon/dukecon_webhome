@@ -59,7 +59,12 @@ htmlSanityCheck {
 
 }
 
-task copyImages1(type:Copy) {
+task submodulesUpdate(type:Exec) {
+    description 'Updates git submodules'
+    commandLine 'git', 'submodule', 'update'
+}
+
+task copyImages1(type:Copy, dependsOn: [submodulesUpdate]) {
     from('references/dukecon/src/main/asciidoc/images') {}
     into('build/docs/html5/site/images')
     doLast { println "images copied"}
