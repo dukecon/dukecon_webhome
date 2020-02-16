@@ -19,7 +19,7 @@ pipeline {
     stages {
         stage('Generate Static Pages') {
             steps {
-                sh("./gradlew buildDocs")
+                sh("./gradlew clean buildDocs")
             }
         }
         stage('Publish Static Pages') {

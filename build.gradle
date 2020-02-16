@@ -76,10 +76,13 @@ task copyResources(
 }
 
 task buildDocs(
-    dependsOn: [clean, copyResources, bake, htmlSanityCheck, copyReports]
+    dependsOn: [copyResources, bake, htmlSanityCheck, copyReports]
 ) {
     doLast {
 
     }
 }
+bake.shouldRunAfter copyResources
+htmlSanityCheck.shouldRunAfter bake
+copyReports.shouldRunAfter htmlSanityCheck
 defaultTasks 'copyResources', 'bake', 'htmlSanityCheck', 'copyReports', 'bakePreview'
