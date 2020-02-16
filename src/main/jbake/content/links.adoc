@@ -8,7 +8,6 @@
 
 * link:impressum.html[Contact Project Lead (DE)]
 * https://groups.google.com/forum/#!forum/dukecon[DukeCon Google Group]
-* Skype: DukeCon
 * https://github.com/dukecon[DukeCon GitHub Project]:
 ** https://github-issue-mover.appspot.com/[Github Issue Mover]
 * Documentation (work in progress):
