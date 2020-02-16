@@ -1,3 +1,4 @@
+:filename: main/jbake/content/architecture/01_introduction_and_goals.adoc
 :jbake-type: page_toc
 :jbake-title: 01 Introduction and Goals
 :jbake-status: published

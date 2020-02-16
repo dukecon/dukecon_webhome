@@ -1,3 +1,4 @@
+:filename: main/jbake/content/architecture/07_deployment_view.adoc
 :jbake-type: page_toc
 :jbake-title: 07 Deployment View
 :jbake-status: published

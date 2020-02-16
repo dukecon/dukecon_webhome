@@ -1,3 +1,4 @@
+:filename: main/jbake/content/conferences.adoc
 :jbake-type: page
 :jbake-title: Conferences
 :jbake-status: published
@@ -5,6 +6,9 @@
 :linkattrs: true
 
 == Conferences using DukeCon
+
+include::config.adoc[]
+{improve}
 
 === Javaland Program Links
 

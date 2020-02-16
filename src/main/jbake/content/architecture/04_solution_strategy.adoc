@@ -1,3 +1,4 @@
+:filename: main/jbake/content/architecture/04_solution_strategy.adoc
 :jbake-type: page_toc
 :jbake-title: 04 Solution Strategy
 :jbake-status: published

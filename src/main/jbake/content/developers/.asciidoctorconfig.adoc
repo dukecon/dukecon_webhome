@@ -1,1 +1,2 @@
+:filename: main/jbake/content/developers/.asciidoctorconfig.adoc
 :imagesdir: ../images/

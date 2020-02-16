@@ -1,3 +1,4 @@
+:filename: main/jbake/content/architecture/06_runtime_view.adoc
 :jbake-type: page_toc
 :jbake-title: 06 Runtime View
 :jbake-status: published

@@ -1,3 +1,4 @@
+:filename: main/jbake/content/architecture/02_architecture_constraints.adoc
 :jbake-type: page_toc
 :jbake-title: 02 Architecture Contraints
 :jbake-status: published

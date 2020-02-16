@@ -1,3 +1,4 @@
+:filename: main/jbake/content/architecture/11_technical_risks.adoc
 :jbake-type: page_toc
 :jbake-title: 11 Technical Risks
 :jbake-status: published

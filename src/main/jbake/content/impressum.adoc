@@ -1,8 +1,12 @@
+:filename: main/jbake/content/impressum.adoc
 :jbake-type: page
 :jbake-title: Impressum
 :jbake-status: published
 
 == Kontakt - Impressum
+
+include::config.adoc[]
+{improve}
 
 === Anbieterkennzeichnung gemäß §5 TMG:
 

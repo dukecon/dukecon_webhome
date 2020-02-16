@@ -1,3 +1,4 @@
+:filename: main/jbake/content/architecture/08_concepts.adoc
 :jbake-type: page_toc
 :jbake-title: 08 Concepts
 :jbake-status: published

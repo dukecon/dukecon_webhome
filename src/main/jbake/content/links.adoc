@@ -1,8 +1,12 @@
+:filename: main/jbake/content/links.adoc
 :jbake-type: page
 :jbake-title: Developers
 :jbake-status: published
 
 == Developer Resources
+
+include::config.adoc[]
+{improve}
 
 === Useful Links
 

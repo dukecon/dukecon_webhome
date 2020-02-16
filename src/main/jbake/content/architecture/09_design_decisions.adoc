@@ -1,3 +1,4 @@
+:filename: main/jbake/content/architecture/09_design_decisions.adoc
 :jbake-type: page_toc
 :jbake-title: 09 Design Decisions
 :jbake-status: published
