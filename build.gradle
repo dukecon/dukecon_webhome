@@ -61,7 +61,11 @@ htmlSanityCheck {
     failOnErrors = false
 
 }
-
+task submodulesUpdate(type:Exec) {
+    description 'Updates git submodules'
+    commandLine 'git', 'submodule', 'update',  "--init", "--recursive"
+    doLast { println "git submodule update"}
+}
 task copyImages1(type:Copy) {
     from("$projectDir/references/dukecon/src/main/asciidoc/images") {}
     into("$buildDir/docs/html5/site/images")

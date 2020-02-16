@@ -1,7 +1,8 @@
-:filename: main/jbake/content/developers/clients.adoc
+:filename: main/jbake/content/clients.adoc
 :jbake-type: page
 :jbake-title: Clients
 :jbake-status: published
+:imagesdir: ./images/
 
 = Clients
 
