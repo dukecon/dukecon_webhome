@@ -27,4 +27,7 @@
           <p><a class="btn btn-primary right" href="https://dev.dukecon.org/jenkins/job/dukecon-doc/ws/target/generated-docs/de/index.html" role="button">read on&raquo;</a></p>
         </div>
       </div>
+        <div class="row">
+            &nbsp;
+        </div>
     </div>
