@@ -62,6 +62,7 @@ htmlSanityCheck {
 task submodulesUpdate(type:Exec) {
     description 'Updates git submodules'
     commandLine 'git', 'submodule', 'update'
+    doLast { println "git submodule update"}
 }
 
 task copyImages1(type:Copy, dependsOn: [submodulesUpdate]) {
