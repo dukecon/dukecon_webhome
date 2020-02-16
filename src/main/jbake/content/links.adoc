@@ -53,7 +53,7 @@
 *** https://programm.javaland.eu/2019/[JavaLand 2019 (Production)]
 *** https://programm.javaland.eu/2018/[JavaLand 2018 (Production)]
 *** https://programm.javaland.eu/2017/[JavaLand 2017 (Production)]
-*** https://dukecon.org/javaland/[JavaLand 2016 (Production)]
+*** https://programm.javaland.eu/2016/[JavaLand 2016 (Production)]
 *** https://latest.dukecon.org/javaland/2019/[JavaLand 2019 (latest with live data)]
 ** https://dev.dukecon.org/jenkins/job/dukecon_android/job/develop/lastSuccessfulBuild/artifact/mobile-ui-javaland-debug.apk[Android App]
 ** https://dev.dukecon.org/jenkins/job/dukecon_cordova_develop/ws/platforms/android/build/outputs/apk/android-debug.apk[Cordova Client] (Currently Android only)

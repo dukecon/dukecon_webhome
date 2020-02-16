@@ -2,11 +2,13 @@
 :jbake-title: Conferences
 :jbake-status: published
 
+:linkattrs: true
+
 == Conferences using DukeCon
 
 === Javaland Program Links
 
-https://www.javaland.eu/[Javaland Website]
+link:https://www.javaland.eu/[Javaland Website,target=_blank,class=btn btn-primary]
 
 http://programm.javaland.eu/2016/[image:JavaLand-2016-Banner.jpg[Javaland 2016,width=600]]
 
