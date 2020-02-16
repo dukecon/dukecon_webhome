@@ -19,7 +19,7 @@ pipeline {
     stages {
         stage('Generate Static Pages') {
             steps {
-                sh("./gradlew clean bake")
+                sh("./gradlew buildDocs")
             }
         }
         stage('Publish Static Pages') {
@@ -40,7 +40,7 @@ pipeline {
         }
         failure {
             // notify users when the Pipeline fails
-            mail to: 'gerd@aschemann.net',
+            mail to: 'gerd@aschemann.net, ralf.d.mueller@docs-as-co.de',
                     subject: "Failed DukeCon WebHome Pipeline: ${currentBuild.fullDisplayName}",
                     body: "Something is wrong with ${env.BUILD_URL}"
         }
