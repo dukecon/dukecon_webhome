@@ -1,3 +1,6 @@
+
+import static groovy.io.FileType.*
+
 buildscript {
     dependencies {
         classpath 'org.asciidoctor:asciidoctorj-diagram:1.5.4.1'
@@ -60,14 +63,14 @@ htmlSanityCheck {
 }
 
 task copyImages1(type:Copy) {
-    from('references/dukecon/src/main/asciidoc/images') {}
-    into('build/docs/html5/site/images')
+    from("$projectDir/references/dukecon/src/main/asciidoc/images") {}
+    into("$buildDir/docs/html5/site/images")
     doLast { println "images copied"}
 }
 task copyReports(type:Copy) {
-    from('build/docs/report'){}
-    into('build/docs/html5/site/tests/report')
-    doLast { println "reports copied"}
+    from("$buildDir/report")
+    into("$buildDir/docs/html5/site/testreports/")
+    println '$buildDir/docs/html5/site/testreports/'
 }
 task copyResources(
     dependsOn: [copyImages1]
@@ -82,6 +85,36 @@ task buildDocs(
 
     }
 }
+
+task prependFilename(
+        description: 'crawls through all AsciiDoc files and prepends the name of the current file',
+        group: 'docToolchain helper',
+) {
+    doLast {
+        File sourceFolder = new File(projectDir.canonicalPath,"references")
+        println("sourceFolder: " + sourceFolder.canonicalPath)
+        sourceFolder.traverse(type: FILES) { file ->
+            if (file.name ==~ '^.*(ad|adoc|asciidoc)$') {
+                if (file.name.split('[.]')[0] in ["feedback", "_feedback", "config", "_config"]) {
+                    println "skipped "+file.name
+                } else {
+                    def text = file.getText('utf-8')
+                    def name = file.canonicalPath - sourceFolder.canonicalPath
+                    name = name.replace("\\", "/").replaceAll("^/", "")
+                    if (text.contains(":filename:")) {
+                        text = text.replaceAll(":filename:.*", ":filename: $name")
+                        println "updated "+name
+                    } else {
+                        text = ":filename: $name\n" + text
+                        println "added   "+name
+                    }
+                    file.write(text,'utf-8')
+                }
+            }
+        }
+    }
+}
+
 bake.shouldRunAfter copyResources
 htmlSanityCheck.shouldRunAfter bake
 copyReports.shouldRunAfter htmlSanityCheck
