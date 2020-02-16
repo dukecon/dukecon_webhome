@@ -6,7 +6,8 @@
           'Conferences': 'conferences',
           'Developers': [
                   'Clients': 'developers/clients',
-                  'Links': 'links'
+                  'Links': 'links',
+                  'Test-Reports': 'testreports/htmlsanity'
           ],
           'Architecture': [
                   '1. Introduction and Goals': 'architecture/01_introduction_and_goals',
