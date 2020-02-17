@@ -83,7 +83,7 @@ task copyResources(
 }
 
 task buildDocs(
-    dependsOn: [copyResources, bake, htmlSanityCheck, copyReports]
+    dependsOn: [submodulesUpdate, copyResources, bake, htmlSanityCheck, copyReports]
 ) {
     doLast {
 
@@ -122,4 +122,7 @@ task prependFilename(
 bake.shouldRunAfter copyResources
 htmlSanityCheck.shouldRunAfter bake
 copyReports.shouldRunAfter htmlSanityCheck
+copyImages1.shouldRunAfter submodulesUpdate
+copyResources.shouldRunAfter submodulesUpdate
+bake.shouldRunAfter submodulesUpdate
 defaultTasks 'copyResources', 'bake', 'htmlSanityCheck', 'copyReports', 'bakePreview'
