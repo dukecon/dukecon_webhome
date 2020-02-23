@@ -1,0 +1,29 @@
+:filename: main/jbake/content/conferences.adoc
+:jbake-type: page
+:jbake-title: Conferences
+:jbake-status: published
+
+:linkattrs: true
+
+== Conferences using DukeCon
+
+include::config.adoc[]
+{improve}
+
+=== Javaland Program Links
+
+link:https://www.javaland.eu/[Javaland Website,target=_blank,class=btn btn-primary]
+
+https://programm.javaland.eu/2016/[image:JavaLand-2016-Banner.jpg[Javaland 2016,width=600]]
+
+https://programm.javaland.eu/2017/[image:JavaLand-2017-Banner.jpg[Javaland 2017,width=600]]
+
+https://programm.javaland.eu/2018/[image:JavaLand-2018-Banner.jpg[Javaland 2018,width=600]]
+
+https://programm.javaland.eu/2019/[image:JavaLand-2019-Banner.jpg[Javaland 2019,width=600]]
+
+=== ApacheCon Program Links
+
+https://apachecon.com/[ApacheCon Website]
+
+https://www.apachecon.com/acna19/s/[image:acna19.png[ApacheCon 2016,width=600]]

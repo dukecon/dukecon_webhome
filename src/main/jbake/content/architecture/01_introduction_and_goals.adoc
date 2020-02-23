@@ -1,0 +1,17 @@
+:filename: main/jbake/content/architecture/01_introduction_and_goals.adoc
+:jbake-type: page_toc
+:jbake-title: 01 Introduction and Goals
+:jbake-status: published
+
+:toc: left
+
+include::../../../../../references/dukecon/src/main/asciidoc/en/01_introduction_and_goals.adoc[]
+
+---
+
+
+[cols="2"]
+|===
+| Prev: -
+| Next: link:02_architecture_constraints.html[2. Architecture Contraints]
+|===

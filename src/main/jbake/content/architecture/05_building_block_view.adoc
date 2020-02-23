@@ -1,0 +1,16 @@
+:filename: main/jbake/content/architecture/05_building_block_view.adoc
+:jbake-type: page_toc
+:jbake-title: 05 Building Block View
+:jbake-status: published
+
+:toc: left
+
+include::../../../../../references/dukecon/src/main/asciidoc/en/05_building_block_view.adoc[]
+
+---
+
+[cols="2"]
+|===
+| Prev: link:04_solution_strategy.html[4. Solution Strategy]
+| Next: link:06_runtime_view.html[6. Runtime View]
+|===

@@ -1,0 +1,17 @@
+:filename: main/jbake/content/architecture/04_solution_strategy.adoc
+:jbake-type: page_toc
+:jbake-title: 04 Solution Strategy
+:jbake-status: published
+
+:toc: left
+
+include::../../../../../references/dukecon/src/main/asciidoc/en/04_solution_strategy.adoc[]
+
+---
+
+[cols="2"]
+|===
+| Prev: link:03_system_scope_and_context.html[3. System Scope and Context]
+| Next: link:05_building_block_view.html[5. Building Block View]
+|===
+

@@ -1,0 +1,16 @@
+:filename: main/jbake/content/architecture/09_design_decisions.adoc
+:jbake-type: page_toc
+:jbake-title: 09 Design Decisions
+:jbake-status: published
+
+:toc: left
+
+include::../../../../../references/dukecon/src/main/asciidoc/en/09_design_decisions.adoc[]
+
+---
+
+[cols="2"]
+|===
+| Prev: link:08_concepts.html[7. Deployment View]
+| Next: link:10_quality_scenarios.html[9. Design Decisions]
+|===
