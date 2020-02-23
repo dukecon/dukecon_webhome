@@ -22,7 +22,7 @@ pipeline {
                 sh("./gradlew clean buildDocs")
             }
         }
-        stage('Publish Static Pages') {
+        stage('Publish Static Pages locally') {
             steps {
                 publishHTML(target: [allowMissing         : true,
                                      alwaysLinkToLastBuild: false,
@@ -30,6 +30,14 @@ pipeline {
                                      reportDir            : 'build/docs/html5/site/',
                                      reportFiles          : 'index.html',
                                      reportName           : 'Published Static Pages'])
+            }
+        }
+        stage('Publish Static Pages to dukecon.org') {
+            when {
+                branch 'develop'
+            }
+            steps {
+                sh "rsync --delete -avH build/docs/html5/site/. /var/www/html"
             }
         }
     }
