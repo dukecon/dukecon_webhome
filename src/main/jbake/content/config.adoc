@@ -1,2 +1,2 @@
 :githubbase: https://github.com/dukecon/dukecon_webhome
-:improve: {githubbase}/blob/master/src/{filename}[improve this doc]
+:improve: {githubbase}/blob/develop/src/{filename}[improve this doc]
