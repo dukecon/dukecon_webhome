@@ -5,7 +5,7 @@
         entries: [
           'Conferences': 'conferences',
           'Developers': [
-                  'Clients': 'developers/clients',
+                  'Clients': 'clients',
                   'Links': 'links',
                   'Test-Reports': 'testreports/htmlsanity'
           ],

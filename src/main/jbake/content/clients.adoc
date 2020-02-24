@@ -1,4 +1,4 @@
-:filename: main/jbake/content/clients.adoc
+:filename: main/jbake/content/developers/clients.adoc
 :jbake-type: page
 :jbake-title: Clients
 :jbake-status: published
@@ -10,9 +10,18 @@
 
 === Android
 
-* https://play.google.com/store/apps/details?id=org.dukecon.android.ui.javaland&hl=en_US&utm_source=dukecon&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1[image:google-play-badge.png[Get it on play Store, width=100px]]
-* https://github.com/dukecon/dukecon_android/tree/javaland-2019-7[Native Android client]
+[cols=2, frame=none,grid=none]
+|===
+|https://github.com/dukecon/dukecon_android[image:JavaLand-Android-2018.png[Javaland 2018,width=200]]
+|https://github.com/dukecon/dukecon_android[image:Apex-Android-2018.png[Apex 2018,width=200]]
+|===
+
 
 === Multiplatform
-* https://github.com/dukecon/dukecon_mobile[Kotlin multiplatfrom native client Android]
+
+* https://github.com/dukecon/dukecon_mobile[Kotlin multiplatfrom native client Android, iOS]
+
+==== Getting started
+
+* https://dukecon.github.io/dukecon_mobile/workshops/javaland2020.html[JavaLand 2020 - Kotlin multiplatfrom workshop]
 
