@@ -24,6 +24,14 @@ include::config.adoc[]
 |https://github.com/dukecon/dukecon_android[image:Apex-Android-2018.png[Apex 2018,width=200]]
 |===
 
+=== SailfishOS
+
+[cols=2, frame=none,grid=none]
+|===
+|https://github.com/andywuest/harbour-sailcon[image:Sailfish_Screenshot1.png[Screenshot 1,width=200]]
+|https://github.com/andywuest/harbour-sailcon[image:Sailfish_Screenshot2.png[Screenshot 2,width=200]]
+|===
+
 
 === Multiplatform
 
