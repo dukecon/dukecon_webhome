@@ -2,6 +2,8 @@
       <div class="container">
           <h1>Welcome to the DukeCon Project!</h1>
           <p class="text-center"><img alt="dukes" src="images/dukes.jpg" style="max-height: 150px"></p>
+          <p>DukeCon is an open source agenda tool which aims to give your conference attendees the best user experience.
+          At its heart, it is stateless, easy to host without a backend but with lots of features through its many frontends.</p>
       </div>
     </div>
 
@@ -9,9 +11,9 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4 clearfix">
-          <h3>Conferences</h3>
+          <h3>Features and Examples</h3>
           <p class="text-center"><img alt="conferences" src="images/conferences.jpg" style="max-height: 120px"/></p>
-          <p>DukeCon is a personal conference scheduler provided by several community and internal conferences</p>
+          <p>DukeCon is is used by several community and internal conferences. Take a look at some real-life examples. And explore its features.</p>
           <p><a class="btn btn-primary right" href="/conferences.html" role="button">read on&raquo;</a></p>
         </div>
         <div class="col-md-4 clearfix">
