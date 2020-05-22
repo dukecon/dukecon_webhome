@@ -14,7 +14,7 @@
           <h3>Features and Examples</h3>
           <p class="text-center"><img alt="conferences" src="images/conferences.jpg" style="max-height: 120px"/></p>
           <p>DukeCon is is used by several community and internal conferences. Take a look at some real-life examples. And explore its features.</p>
-          <p><a class="btn btn-primary right" href="/conferences.html" role="button">read on&raquo;</a></p>
+          <p><a class="btn btn-primary right" href="/documentation/conferences.html" role="button">read on&raquo;</a></p>
         </div>
         <div class="col-md-4 clearfix">
           <h3>Developers</h3>

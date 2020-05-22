@@ -7,7 +7,7 @@
 
 == Conferences using DukeCon
 
-include::config.adoc[]
+include::../config.adoc[]
 {improve}
 
 === Javaland Program Links

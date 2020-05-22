@@ -2,14 +2,13 @@
 :jbake-type: page_toc
 :jbake-title: Features
 :jbake-status: published
-
 :linkattrs: true
+include::../config.adoc[]
 
 :toc: left
 
 == Features of DukeCon
 
-include::config.adoc[]
 {improve}
 
 DukeCon consists of several modules which implement different features.
