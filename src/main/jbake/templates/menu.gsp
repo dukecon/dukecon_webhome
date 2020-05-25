@@ -3,7 +3,10 @@
     def nav = [
         title: 'DukeCon',
         entries: [
-          'Conferences': 'conferences',
+          'Documentation': [ 
+                  'Features': 'documentation/features',
+                  'Examples': 'documentation/conferences',
+          ],
           'Developers': [
                   'Clients': 'clients',
                   'Links': 'links',

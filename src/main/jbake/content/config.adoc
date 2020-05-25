@@ -1,2 +1,3 @@
 :githubbase: https://github.com/dukecon/dukecon_webhome
 :improve: {githubbase}/blob/develop/src/{filename}[improve this doc]
+:toclevels: 4

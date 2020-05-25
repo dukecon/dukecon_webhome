@@ -1,0 +1,64 @@
+:filename: main/jbake/content/documentation/features.adoc
+:jbake-type: page_toc
+:jbake-title: Features
+:jbake-status: published
+:linkattrs: true
+include::../config.adoc[]
+
+:toc: left
+
+== Features of DukeCon
+
+{improve}
+
+DukeCon consists of several modules which implement different features.
+At its core is a JSON based description of your conference schedule which is picked up and presented by the various frontend clients.
+
+=== Dukecon PWA HTML Client
+
+This is client which is best to start with.
+It provides the following features:
+
+==== Responsive HTML view
+
+Runs in any modern web browser and adapts to the screen size of your device. 
+No matter if you have a 4k monitor or jsut a smart phone display.
+
+==== Offline Functionality through Progressive Web-App (PWA)
+
+The internet connection might be not the best at you conference location. 
+The solution is a progressive web application which, once loaded, caches your schedule on the attendees device.
+It thus gives nearly the same usability as a native app without having to install it.
+
+==== Static Website, easy to host
+
+Since this client is a static website without the need for any backends (database etc.), it is easy to host.
+You can even host it for free through GitLab or Github Pages!
+
+==== Simple DSGVO/GDPR evaluation
+
+Since this client does not make use of any database, it only servers data of your conferences speakers.
+It does not store data (besides some website access logs) of your conference attendees.  
+
+==== Talks and Speakers in different Views
+
+View all talks chronologically, by location or by speaker.
+
+==== Filter and Search
+
+You conference attendees can search the whole conference schedule and use filters for the language of the talk or the location/room, just to name a few.
+
+==== Multi Language Support
+
+English and German nationalization implemented.
+
+==== Additional features through Backend-Components
+
+Extend the User Experience by adding a backend server.
+This lets your attendees
+
+* set favorites of the talks they plan to visit
+* sync favorites with the central server after login
+
+https://github.com/dukecon/dukecon_pwa
+
