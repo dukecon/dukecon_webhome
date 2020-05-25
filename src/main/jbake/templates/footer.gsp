@@ -1,7 +1,7 @@
 
     <div id="footer">
       <div class="container">
-        <p class="muted credit">&copy; 2019 | Mixed with Bootstrap v3.3.7 | Baked with JBake ${version}</p>
+        <p class="muted credit">&copy; ${new Date().year + 1900} | Mixed with Bootstrap v3.3.7 | Baked with JBake ${version}</p>
       </div>
     </div>
 
