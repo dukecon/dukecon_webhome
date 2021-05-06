@@ -28,6 +28,7 @@ jobs:
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
+        if: github.ref == 'refs/heads/develop'
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: build/docs/html5/site/ # The folder the action should deploy.
