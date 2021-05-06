@@ -1,0 +1,80 @@
+@startuml
+skinparam handwritten true
+skinparam linetype ortho
+
+actor :Conference Organizer:
+actor :Conference Participant:
+actor :Speaker:
+
+node "Web-Browser Device" {
+    [DukeCon Admin] <<Client>>
+    [DukeCon PWA] <<Client>> as DukeConPwa
+}
+
+node "Native Android Device" {
+    [DukeCon Android] <<Client>> as DukeConAndroid
+}
+
+cloud "Conference Organization Infrastructure" {
+    [Conference Backoffice] <<Service>> as ConferenceBackoffice #lightgreen
+'    [SMTP Server] <<Postfix>> as ConferenceMailer #red
+}
+
+cloud "DukeCon Infrastructure" {
+    node DukeCon-Server <<Docker : Java8>> {
+        [DukeCon] <<Service>> as DukeconService
+    }
+
+    node DukeCon-Feedback-Server <<Docker : Java9>> {
+        [DukeCon-Feedback] <<Service>> as DukeconFeedbackService
+    }
+
+    node KeyCloak-Server <<Docker : WildFly>> {
+        [KeyCloak] <<Service>>
+    }
+    DukeconService -down-> KeyCloak : Validate token
+    DukeconFeedbackService -down-> KeyCloak : Validate token
+
+    together {
+        node DukeCon-DB <<Docker : PostgreSQL>> {
+            database DukeCon_PostgreSQL
+        }
+        [DukeconService] --> [DukeCon_PostgreSQL] : JDBC
+
+        node DukeCon-Feedback-DB <<Docker : PostgreSQL>> {
+            database DukeCon_Feedback_PostgreSQL as DukeconFeedbackDB
+        }
+        [DukeconFeedbackService] ..> DukeconFeedbackDB : JDBC
+        DukeconService <.right. DukeconFeedbackService : Retrieve talk + speaker data
+
+        node KeyCloak-DB <<Docker : PostgreSQL>> {
+            database KeyCloak_PostgreSQL
+        }
+        [KeyCloak] --> [KeyCloak_PostgreSQL] : JDBC
+    }
+}
+
+ConferenceBackoffice -right-> DukeconService : Update talk + speaker data
+ConferenceBackoffice <-left- KeyCloak : Retrieve participant data
+'[DukeconFeedbackService] ..> ConferenceMailer : SMTP
+ConferenceBackoffice .down.> DukeconFeedbackService : Fetch feedback data
+
+:Conference Organizer: -down-> (DukeCon Admin) : "Update noof participants /\nEnforce data update"
+:Conference Organizer: -down-> ConferenceBackoffice
+:Conference Organizer: -down-> KeyCloak : Administer / Define roles
+
+:Conference Participant: -down-> DukeConAndroid : Compile conference program
+:Conference Participant: -down-> DukeConPwa : Compile conference program
+
+(DukeConPwa) -down-> (DukeconService) : Conf. data/favorites
+(DukeConPwa) .down-> (DukeconFeedbackService) : Feedback for talks
+(DukeConPwa) -down-> (KeyCloak) : Authenticate
+
+(DukeConAndroid) --> (DukeconService) : Conf. data/favorites
+(DukeconFeedbackService) <.. (DukeConAndroid) : Feedback for talks
+(DukeConAndroid) --> (KeyCloak) : Authenticate
+
+'ConferenceMailer --> :Speaker: : Mail
+ConferenceBackoffice .down.> :Speaker: : Notification w/ feedback
+
+@enduml

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+    	<loc>https://dukecon.org/testreports/htmlsanity.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/links.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/impressum.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/documentation/conferences.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/clients.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/architecture/01_introduction_and_goals.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/architecture/12_glossary.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/architecture/11_technical_risks.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/architecture/04_solution_strategy.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/architecture/03_system_scope_and_context.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/documentation/features.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/architecture/06_runtime_view.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/architecture/05_building_block_view.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/architecture/08_concepts.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/architecture/07_deployment_view.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/architecture/10_quality_scenarios.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/architecture/09_design_decisions.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://dukecon.org/architecture/02_architecture_constraints.html</loc>
+    	<lastmod>2021-05-06</lastmod>
+    </url>
+
+</urlset>

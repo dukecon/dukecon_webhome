@@ -1,0 +1,28 @@
+@startuml
+skinparam handwritten true
+skinparam linetype ortho
+
+actor :Conference Participant: as participant
+
+cloud "DukeCon Infra" #lightgray {
+    [DukeCon] <<Platform>> #green
+}
+
+cloud "DOAG Infra" {
+    [Formes] <<Platform>> #lightgreen
+    [Vortragsplaner] <<Platform>> #red
+    note left of Vortragsplaner
+        switched off
+    endnote
+}
+
+participant -down-> (DukeCon) : Read/Compile conference program (via DukeCon apps)
+participant -down-> (Vortragsplaner) : Read/Compile conference program (old style)
+
+(Formes) -left-> (Vortragsplaner) : Data Export
+(Formes) -right-> (DukeCon) : Data Export
+
+actor :Back-Officer: as backofficer
+
+backofficer -up-> (Formes) : Maintain JavaLand program
+@enduml

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Features - DukeCon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/asciidoctor.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/prettify.css" rel="stylesheet">
+      <style>
+      @media only screen and (min-width:768px){
+          #toctitle{font-size:1.375em}
+          #toc.toc{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #efefed;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto; padding-top: 60px;}
+          #toc.toc #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+          #toc.toc>ul{font-size:.9em;margin-bottom:0}
+          #toc.toc ul ul{margin-left:0;padding-left:1em}
+          #toc.toc ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+          body.toc2{ padding-left: 15.5em;padding-right:0; width: 100% !important;}
+          body.toc2 div#wrap div.content {width: auto !important;}
+          #toc.toc{width:15em; padding-top: 60px;}
+      }
+      @media only screen and (min-width:1280px){
+          body.toc2{ padding-left: 20.5em;padding-right:0; width: 100% !important;}
+          body.toc2 div#wrap div.content {width: auto !important;}
+          #toc.toc{width:20em; padding-top: 60px;}
+          #toc.toc #toctitle{font-size:1.375em}
+          #toc.toc>ul{font-size:.95em}
+          #toc.toc ul ul{padding-left:1.25em}
+      }
+      body {
+          overflow-y: scroll;
+      }
+      html, body {
+          font-size: 1.06rem;
+      }
+      body.toc2{ overflow-x: hidden}
+      #toc.toc ul {
+          padding-inline-start: 0;
+      }
+      :target::before {
+          content: "";
+          display: block;
+          height: 60px; /* fixed header height*/
+          margin: -60px 0 0; /* negative fixed header height */
+      }
+      </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="../favicon.ico">
+  </head>
+
+<body onload="prettyPrint()" class="toc2 toc-left" >
+<div id="wrap">
+
+	
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">DukeCon</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+              
+                
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li><a href="../documentation/features.html">Features</a></li>
+                      
+                        <li><a href="../documentation/conferences.html">Examples</a></li>
+                      
+                    </ul>
+                  </li>
+                
+              
+                
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li><a href="../clients.html">Clients</a></li>
+                      
+                        <li><a href="../links.html">Links</a></li>
+                      
+                        <li><a href="../testreports/htmlsanity.html">Test-Reports</a></li>
+                      
+                    </ul>
+                  </li>
+                
+              
+                
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Architecture<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li><a href="../architecture/01_introduction_and_goals.html">1. Introduction and Goals</a></li>
+                      
+                        <li><a href="../architecture/02_architecture_constraints.html">2. Architecture Constraints</a></li>
+                      
+                        <li><a href="../architecture/03_system_scope_and_context.html">3. System Scope and Context</a></li>
+                      
+                        <li><a href="../architecture/04_solution_strategy.html">4. Solution Strategy</a></li>
+                      
+                        <li><a href="../architecture/05_building_block_view.html">5. Building Block View</a></li>
+                      
+                        <li><a href="../architecture/06_runtime_view.html">6. Runtime View</a></li>
+                      
+                        <li><a href="../architecture/07_deployment_view.html">7. Deployment View</a></li>
+                      
+                        <li><a href="../architecture/08_concepts.html">8. Concepts</a></li>
+                      
+                        <li><a href="../architecture/09_design_decisions.html">9. Design Decisions</a></li>
+                      
+                        <li><a href="../architecture/10_quality_scenarios.html">10. Quality Scenarios</a></li>
+                      
+                        <li><a href="../architecture/11_technical_risks.html">11. Technical Risks</a></li>
+                      
+                        <li><a href="../architecture/12_glossary.html">12. Glossary</a></li>
+                      
+                    </ul>
+                  </li>
+                
+              
+                
+                  <li><a href="../impressum.html">Imprint (DE)</a></li>
+                
+              
+          </ul>
+            <!-- tag::search[] -->
+            <form class="navbar-form navbar-right" action="https://google.de/search">
+                <div class="form-group">
+                    <input type="hidden" name="q" value="site:dukecon.org">
+                    <input type="text" name="q" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <!-- end::search[] -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<div class="container content">
+	<p><div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_features_of_dukecon">Features of DukeCon</a>
+<ul class="sectlevel2">
+<li><a href="#_dukecon_pwa_html_client">Dukecon PWA HTML Client</a>
+<ul class="sectlevel3">
+<li><a href="#_responsive_html_view">Responsive HTML view</a></li>
+<li><a href="#_offline_functionality_through_progressive_web_app_pwa">Offline Functionality through Progressive Web-App (PWA)</a></li>
+<li><a href="#_static_website_easy_to_host">Static Website, easy to host</a></li>
+<li><a href="#_simple_dsgvogdpr_evaluation">Simple DSGVO/GDPR evaluation</a></li>
+<li><a href="#_talks_and_speakers_in_different_views">Talks and Speakers in different Views</a></li>
+<li><a href="#_filter_and_search">Filter and Search</a></li>
+<li><a href="#_multi_language_support">Multi Language Support</a></li>
+<li><a href="#_additional_features_through_backend_components">Additional features through Backend-Components</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_features_of_dukecon">Features of DukeCon</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://github.com/dukecon/dukecon_webhome/blob/develop/src/main/jbake/content/documentation/features.adoc">improve this doc</a></p>
+</div>
+<div class="paragraph">
+<p>DukeCon consists of several modules which implement different features.
+At its core is a JSON based description of your conference schedule which is picked up and presented by the various frontend clients.</p>
+</div>
+<div class="sect2">
+<h3 id="_dukecon_pwa_html_client">Dukecon PWA HTML Client</h3>
+<div class="paragraph">
+<p>This is client which is best to start with.
+It provides the following features:</p>
+</div>
+<div class="sect3">
+<h4 id="_responsive_html_view">Responsive HTML view</h4>
+<div class="paragraph">
+<p>Runs in any modern web browser and adapts to the screen size of your device.
+No matter if you have a 4k monitor or jsut a smart phone display.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_offline_functionality_through_progressive_web_app_pwa">Offline Functionality through Progressive Web-App (PWA)</h4>
+<div class="paragraph">
+<p>The internet connection might be not the best at you conference location.
+The solution is a progressive web application which, once loaded, caches your schedule on the attendees device.
+It thus gives nearly the same usability as a native app without having to install it.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_static_website_easy_to_host">Static Website, easy to host</h4>
+<div class="paragraph">
+<p>Since this client is a static website without the need for any backends (database etc.), it is easy to host.
+You can even host it for free through GitLab or Github Pages!</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_simple_dsgvogdpr_evaluation">Simple DSGVO/GDPR evaluation</h4>
+<div class="paragraph">
+<p>Since this client does not make use of any database, it only servers data of your conferences speakers.
+It does not store data (besides some website access logs) of your conference attendees.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_talks_and_speakers_in_different_views">Talks and Speakers in different Views</h4>
+<div class="paragraph">
+<p>View all talks chronologically, by location or by speaker.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_filter_and_search">Filter and Search</h4>
+<div class="paragraph">
+<p>You conference attendees can search the whole conference schedule and use filters for the language of the talk or the location/room, just to name a few.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_multi_language_support">Multi Language Support</h4>
+<div class="paragraph">
+<p>English and German nationalization implemented.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_additional_features_through_backend_components">Additional features through Backend-Components</h4>
+<div class="paragraph">
+<p>Extend the User Experience by adding a backend server.
+This lets your attendees</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>set favorites of the talks they plan to visit</p>
+</li>
+<li>
+<p>sync favorites with the central server after login</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/dukecon/dukecon_pwa" class="bare">https://github.com/dukecon/dukecon_pwa</a></p>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+
+	</div>
+
+</div>
+<div id="push"></div>
+</div>
+
+
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2021 | Mixed with Bootstrap v3.3.7 | Baked with JBake v2.6.4</p>
+      </div>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/prettify.js"></script>
+
+
+
+</body>
+</html>

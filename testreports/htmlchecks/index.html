@@ -1,0 +1,2117 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta httpEquiv="Content-Type" content="text/html"; charset="utf-8"/>
+<title>HTML Sanity Check Results</title>
+<link href="scroll.css" rel="stylesheet" type="text/css"/>
+<link href="htmlsc-style.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<script>
+$(function(){
+
+    $(document).on( 'scroll', function(){
+      if ($(window).scrollTop() > 100) {
+            $('.scroll-top-wrapper').addClass('show');
+        } else {
+            $('.scroll-top-wrapper').removeClass('show');
+        }
+    });
+});
+
+$(function(){
+    $(document).on( 'scroll', function(){
+        if ($(window).scrollTop() > 80) {
+            $('.scroll-top-wrapper').addClass('show');
+        } else {
+            $('.scroll-top-wrapper').removeClass('show');
+        }
+    });
+    $('.scroll-top-wrapper').on('click', scrollToTop);
+});
+
+function scrollToTop() {
+    verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+    element = $('body');
+    offset = element.offset();
+    offsetTop = offset.top;
+    $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+}
+</script>
+
+</head>
+<body id="top">
+<img class="logo" src="htmlsanitycheck-logo.png" alt="htmlSC" align="right"/><h1>HTML Sanity Check Results </h1>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="pages">
+
+          <div class="counter">21</div>
+
+          pages</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">1426</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">22</div>
+
+          issues</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="duration">
+
+          <div class="counter">45.762sec</div>
+
+          duration</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox failures" id="successRate">
+
+        <div class="percent">98%</div>
+        successful</div>
+    </td></tr></table>
+
+<h2>Results by Page </h2>
+<table>
+   <thead>
+     <tr>
+       <th>Page</th> <th>Checks</th> <th>Findings</th> <th>Success rate</th>
+     </tr>
+   </thead>
+   <tbody>
+      <tr>
+        <td class="success"><a href="#09_design_decisionsXhtml">09_design_decisions.html</a></td>
+        <td class="number">67</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#07_deployment_viewXhtml">07_deployment_view.html</a></td>
+        <td class="number">69</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#08_conceptsXhtml">08_concepts.html</a></td>
+        <td class="number">134</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#11_technical_risksXhtml">11_technical_risks.html</a></td>
+        <td class="number">54</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#12_glossaryXhtml">12_glossary.html</a></td>
+        <td class="number">52</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#02_architecture_constraintsXhtml">02_architecture_constraints.html</a></td>
+        <td class="number">63</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#06_runtime_viewXhtml">06_runtime_view.html</a></td>
+        <td class="number">64</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#04_solution_strategyXhtml">04_solution_strategy.html</a></td>
+        <td class="number">54</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#05_building_block_viewXhtml">05_building_block_view.html</a></td>
+        <td class="number">89</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#10_quality_scenariosXhtml">10_quality_scenarios.html</a></td>
+        <td class="number">60</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#01_introduction_and_goalsXhtml">01_introduction_and_goals.html</a></td>
+        <td class="number">61</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#03_system_scope_and_contextXhtml">03_system_scope_and_context.html</a></td>
+        <td class="number">65</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="failures"><a href="#linksXhtml">links.html</a></td>
+        <td class="number">141</td>
+        <td class="number">17</td>
+        <td class="number failures">87%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#indexXhtml">index.html</a></td>
+        <td class="number">43</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#htmlsanityXhtml">htmlsanity.html</a></td>
+        <td class="number">43</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#archiveXhtml">archive.html</a></td>
+        <td class="number">43</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="failures"><a href="#conferencesXhtml">conferences.html</a></td>
+        <td class="number">72</td>
+        <td class="number">5</td>
+        <td class="number failures">93%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#featuresXhtml">features.html</a></td>
+        <td class="number">79</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#clientsXhtml">clients.html</a></td>
+        <td class="number">67</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#indexXhtml">index.html</a></td>
+        <td class="number">57</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+      <tr>
+        <td class="success"><a href="#impressumXhtml">impressum.html</a></td>
+        <td class="number">49</td>
+        <td class="number">0</td>
+        <td class="number success">100%</td>
+      </tr>
+
+    </tbody>
+  </table><hr>
+
+<h1 id="09_design_decisionsXhtml">Results for 09_design_decisions.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/architecture/09_design_decisions.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">9.12</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">67</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 21 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 11 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 34 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="07_deployment_viewXhtml">Results for 07_deployment_view.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/architecture/07_deployment_view.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">9.45</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">69</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 21 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 17 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 30 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="08_conceptsXhtml">Results for 08_concepts.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/architecture/08_concepts.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">12.99</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">134</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 21 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 34 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 78 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="11_technical_risksXhtml">Results for 11_technical_risks.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/architecture/11_technical_risks.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">7.93</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">54</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 21 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 6 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 26 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="12_glossaryXhtml">Results for 12_glossary.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/architecture/12_glossary.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">9.2</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">52</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 20 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 6 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 25 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="02_architecture_constraintsXhtml">Results for 02_architecture_constraints.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/architecture/02_architecture_constraints.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">15.63</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">63</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 21 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 9 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 32 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="06_runtime_viewXhtml">Results for 06_runtime_view.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/architecture/06_runtime_view.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">8.69</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">64</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 21 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 10 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 32 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="04_solution_strategyXhtml">Results for 04_solution_strategy.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/architecture/04_solution_strategy.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">7.97</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">54</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 21 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 6 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 26 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="05_building_block_viewXhtml">Results for 05_building_block_view.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/architecture/05_building_block_view.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">13.48</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">89</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 21 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 35 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 32 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="10_quality_scenariosXhtml">Results for 10_quality_scenarios.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/architecture/10_quality_scenarios.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">8.34</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">60</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 21 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 8 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 30 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="01_introduction_and_goalsXhtml">Results for 01_introduction_and_goals.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/architecture/01_introduction_and_goals.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">8.91</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">61</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 20 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 9 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 31 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="03_system_scope_and_contextXhtml">Results for 03_system_scope_and_context.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/architecture/03_system_scope_and_context.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">8.79</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">65</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 1 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 21 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 1 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 9 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 32 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="linksXhtml">Results for links.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/links.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">14.64</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">141</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">17</div>
+
+          issues</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox failures" id="successRate">
+
+        <div class="percent">87%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 19 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 5 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 69 href checked,
+ 0 missing id found.<br>
+ 
+<div class="failures"><h3>External Links Check</h3></div>
+
+
+ 48 anchor href attribute checked,
+ 17 broken external link found.<br>
+ 
+  <ul>
+      <li> Error: https://testing.dukecon.org/javaland/2019/rest/conferences/javaland2019 returned statuscode 503. </li>
+      <li> Error: https://github-issue-mover.appspot.com/ returned statuscode 404. </li>
+      <li> Error: https://keycloak.dukecon.org/auth/realms/dukecon-testing/account returned statuscode 404. </li>
+      <li> Error: https://latest.dukecon.org/javaland/2017/rest/conferences/javaland2017 returned statuscode 404. </li>
+      <li> Error: https://testing.dukecon.org/info/server returned statuscode 503. </li>
+      <li> Warning: localhost urls indicates suspicious environment dependency: href=http://localhost:8080 </li>
+      <li> Unknown host with href=http://localhost:8080 </li>
+      <li> Error: https://latest.dukecon.org/javaland/2019/rest/conferences/javaland2019 returned statuscode 404. </li>
+      <li> Error: https://keycloak.dukecon.org/auth/realms/dukecon-developer/account returned statuscode 404. </li>
+      <li> Error: https://latest.dukecon.org/javaland/2016/rest/conferences/javaland2016 returned statuscode 404. </li>
+      <li> Error: https://keycloak.dukecon.org/auth/realms/dukecon-latest/account returned statuscode 404. </li>
+      <li> Error: https://testing.dukecon.org/javaland/2016/rest/conferences/javaland2016 returned statuscode 503. </li>
+      <li> Error: https://testing.dukecon.org/conferences returned statuscode 503. </li>
+      <li> Error: https://testing.dukecon.org/javaland/2018/rest/conferences/javaland2018 returned statuscode 503. </li>
+      <li> Error: https://testing.dukecon.org/health/server returned statuscode 503. </li>
+      <li> Error: https://testing.dukecon.org/javaland/2017/rest/conferences/javaland2017 returned statuscode 503. </li>
+      <li> Error: https://latest.dukecon.org/javaland/2018/rest/conferences/javaland2018 returned statuscode 404. </li>
+  </ul>
+<hr><p>
+
+<h1 id="indexXhtml">Results for index.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/tags/index.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">7.28</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">43</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 19 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 3 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 21 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 0 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="htmlsanityXhtml">Results for htmlsanity.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/testreports/htmlsanity.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">6.93</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">43</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 19 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 3 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 21 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 0 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="archiveXhtml">Results for archive.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/archive.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">6.82</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">43</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 19 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 3 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 21 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 0 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="conferencesXhtml">Results for conferences.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/documentation/conferences.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">8.69</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">72</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">5</div>
+
+          issues</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox failures" id="successRate">
+
+        <div class="percent">93%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 5 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 19 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="failures"><h3>Missing Local Images Check</h3></div>
+
+
+ 5 img src attributes checked,
+ 5 missing image files found.<br>
+ 
+  <ul>
+      <li> image "./images/JavaLand-2016-Banner.jpg" missing </li>
+      <li> image "./images/JavaLand-2017-Banner.jpg" missing </li>
+      <li> image "./images/JavaLand-2018-Banner.jpg" missing </li>
+      <li> image "./images/JavaLand-2019-Banner.jpg" missing </li>
+      <li> image "./images/acna19.png" missing </li>
+  </ul>
+
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 6 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 29 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 8 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="featuresXhtml">Results for features.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/documentation/features.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">11.99</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">79</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 19 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 15 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 43 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 2 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="clientsXhtml">Results for clients.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/clients.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">9.5</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">67</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 4 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 19 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 4 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 9 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 26 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 5 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="indexXhtml">Results for index.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/index.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">8.73</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">57</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 4 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 21 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 4 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 3 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 24 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+
+<h1 id="impressumXhtml">Results for impressum.html </h1>
+location : /home/runner/work/dukecon_webhome/dukecon_webhome/build/docs/html5/site/impressum.html <p>
+
+<table><tr><td><div class="summaryGroup">
+<table>
+<tr>
+
+    <td>
+
+      <div class="infoBox" id="size">
+
+          <div class="counter">9.03</div>
+
+          kByte</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="checks">
+
+          <div class="counter">49</div>
+
+          checks</div>
+
+    </td>
+
+    <td>
+
+      <div class="infoBox" id="findings">
+
+          <div class="counter">0</div>
+
+          issue</div>
+
+    </td></tr>
+</table></div></td  >
+
+    <td><div class="infoBox success" id="successRate">
+
+        <div class="percent">100%</div>
+        successful</div>
+    </td></tr></table>
+
+
+<div class="success"><h3>Consistency of ImageMaps</h3></div>
+
+
+ 0 imageMap checked,
+ 0 map/area and usemap-references found.<br>
+ 
+<div class="success"><h3>Missing alt-attribute declaration in image tags</h3></div>
+
+
+ 0 image tags checked,
+ 0 missing alt attributes found.<br>
+ 
+<div class="success"><h3>Missing Local Resources Check</h3></div>
+
+
+ 19 anchor tag href attribute checked,
+ 0 missing local resources found.<br>
+ 
+<div class="success"><h3>Missing Local Images Check</h3></div>
+
+
+ 0 img src attributes checked,
+ 0 missing image files found.<br>
+ 
+<div class="success"><h3>Duplicate Definition of id Check</h3></div>
+
+
+ 6 id checked,
+ 0 duplicate id found.<br>
+ 
+<div class="success"><h3>Broken Internal Links Check</h3></div>
+
+
+ 23 href checked,
+ 0 missing id found.<br>
+ 
+<div class="success"><h3>External Links Check</h3></div>
+
+
+ 1 anchor href attribute checked,
+ 0 broken external link found.<br>
+ <hr><p>
+<!-- scroll-to-top icon -->
+<div class="scroll-top-wrapper">
+   <img src="arrow-up.png" alt="to top"/>
+</div>
+
+<div id="footer">
+  Generated by <a href="https://www.aim42.org">htmlSanityCheck</a> (version 1.1.3) at 06. May 2021, 20:40 
+</div></body></html>

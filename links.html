@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+    <meta charset="utf-8"/>
+    <title>Developers - DukeCon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/asciidoctor.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+      <style>
+      @media only screen and (min-width:768px){
+          #toctitle{font-size:1.375em}
+          #toc.toc{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #efefed;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto; padding-top: 60px;}
+          #toc.toc #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+          #toc.toc>ul{font-size:.9em;margin-bottom:0}
+          #toc.toc ul ul{margin-left:0;padding-left:1em}
+          #toc.toc ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+          body.toc2{ padding-left: 15.5em;padding-right:0; width: 100% !important;}
+          body.toc2 div#wrap div.content {width: auto !important;}
+          #toc.toc{width:15em; padding-top: 60px;}
+      }
+      @media only screen and (min-width:1280px){
+          body.toc2{ padding-left: 20.5em;padding-right:0; width: 100% !important;}
+          body.toc2 div#wrap div.content {width: auto !important;}
+          #toc.toc{width:20em; padding-top: 60px;}
+          #toc.toc #toctitle{font-size:1.375em}
+          #toc.toc>ul{font-size:.95em}
+          #toc.toc ul ul{padding-left:1.25em}
+      }
+      body {
+          overflow-y: scroll;
+      }
+      html, body {
+          font-size: 1.06rem;
+      }
+      body.toc2{ overflow-x: hidden}
+      #toc.toc ul {
+          padding-inline-start: 0;
+      }
+      :target::before {
+          content: "";
+          display: block;
+          height: 60px; /* fixed header height*/
+          margin: -60px 0 0; /* negative fixed header height */
+      }
+      </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">-->
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+
+    <body onload="prettyPrint()">
+        <div id="wrap">
+
+            
+	<!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">DukeCon</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+              
+                
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li><a href="documentation/features.html">Features</a></li>
+                      
+                        <li><a href="documentation/conferences.html">Examples</a></li>
+                      
+                    </ul>
+                  </li>
+                
+              
+                
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Developers<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li><a href="clients.html">Clients</a></li>
+                      
+                        <li><a href="links.html">Links</a></li>
+                      
+                        <li><a href="testreports/htmlsanity.html">Test-Reports</a></li>
+                      
+                    </ul>
+                  </li>
+                
+              
+                
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Architecture<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      
+                        <li><a href="architecture/01_introduction_and_goals.html">1. Introduction and Goals</a></li>
+                      
+                        <li><a href="architecture/02_architecture_constraints.html">2. Architecture Constraints</a></li>
+                      
+                        <li><a href="architecture/03_system_scope_and_context.html">3. System Scope and Context</a></li>
+                      
+                        <li><a href="architecture/04_solution_strategy.html">4. Solution Strategy</a></li>
+                      
+                        <li><a href="architecture/05_building_block_view.html">5. Building Block View</a></li>
+                      
+                        <li><a href="architecture/06_runtime_view.html">6. Runtime View</a></li>
+                      
+                        <li><a href="architecture/07_deployment_view.html">7. Deployment View</a></li>
+                      
+                        <li><a href="architecture/08_concepts.html">8. Concepts</a></li>
+                      
+                        <li><a href="architecture/09_design_decisions.html">9. Design Decisions</a></li>
+                      
+                        <li><a href="architecture/10_quality_scenarios.html">10. Quality Scenarios</a></li>
+                      
+                        <li><a href="architecture/11_technical_risks.html">11. Technical Risks</a></li>
+                      
+                        <li><a href="architecture/12_glossary.html">12. Glossary</a></li>
+                      
+                    </ul>
+                  </li>
+                
+              
+                
+                  <li><a href="impressum.html">Imprint (DE)</a></li>
+                
+              
+          </ul>
+            <!-- tag::search[] -->
+            <form class="navbar-form navbar-right" action="https://google.de/search">
+                <div class="form-group">
+                    <input type="hidden" name="q" value="site:dukecon.org">
+                    <input type="text" name="q" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <!-- end::search[] -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+            <div class="container content">
+                <p><div class="sect1">
+<h2 id="_developer_resources">Developer Resources</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://github.com/dukecon/dukecon_webhome/blob/develop/src/main/jbake/content/links.adoc">improve this doc</a></p>
+</div>
+<div class="sect2">
+<h3 id="_useful_links">Useful Links</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="impressum.html">Contact Project Lead (DE)</a></p>
+</li>
+<li>
+<p><a href="https://groups.google.com/forum/#!forum/dukecon">DukeCon Google Group</a></p>
+</li>
+<li>
+<p><a href="https://github.com/dukecon">DukeCon GitHub Project</a>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github-issue-mover.appspot.com/">Github Issue Mover</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Documentation (work in progress):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Architecture</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://dev.dukecon.org/jenkins/job/dukecon-doc/ws/target/generated-docs/de/index.html">German</a></p>
+</li>
+<li>
+<p><a href="https://dev.dukecon.org/jenkins/job/dukecon-doc/ws/target/generated-docs/en/index.html">English</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>REST API</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Documentation currently not available</p>
+</li>
+<li>
+<p>Swagger file currently not available</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Server (JSON):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Latest:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://latest.dukecon.org/conferences">Overview of all conferences on this server</a></p>
+</li>
+<li>
+<p><a href="https://latest.dukecon.org/javaland/2019/rest/conferences/javaland2019">JavaLand 2019</a></p>
+</li>
+<li>
+<p><a href="https://latest.dukecon.org/javaland/2018/rest/conferences/javaland2018">JavaLand 2018</a></p>
+</li>
+<li>
+<p><a href="https://latest.dukecon.org/javaland/2017/rest/conferences/javaland2017">JavaLand 2017</a></p>
+</li>
+<li>
+<p><a href="https://latest.dukecon.org/javaland/2016/rest/conferences/javaland2016">JavaLand 2016</a></p>
+</li>
+<li>
+<p><a href="https://latest.dukecon.org/info/server">Git Info (Server)</a></p>
+</li>
+<li>
+<p><a href="https://latest.dukecon.org/health/server">Health Check (Server)</a></p>
+</li>
+<li>
+<p><a href="https://latest.dukecon.org/info/feedback">Git Info (Feedback)</a></p>
+</li>
+<li>
+<p><a href="https://latest.dukecon.org/health/feedback">Health Check (Feedback)</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Testing:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://testing.dukecon.org/conferences">Overview of all conferences on this server</a></p>
+</li>
+<li>
+<p><a href="https://testing.dukecon.org/javaland/2019/rest/conferences/javaland2019">JavaLand 2019</a></p>
+</li>
+<li>
+<p><a href="https://testing.dukecon.org/javaland/2018/rest/conferences/javaland2018">JavaLand 2018</a></p>
+</li>
+<li>
+<p><a href="https://testing.dukecon.org/javaland/2017/rest/conferences/javaland2017">JavaLand 2017</a></p>
+</li>
+<li>
+<p><a href="https://testing.dukecon.org/javaland/2016/rest/conferences/javaland2016">JavaLand 2016</a></p>
+</li>
+<li>
+<p><a href="https://testing.dukecon.org/info/server">Git Info (Server)</a></p>
+</li>
+<li>
+<p><a href="https://testing.dukecon.org/health/server">Health Check (Server)</a></p>
+</li>
+<li>
+<p><a href="https://testing.dukecon.org/info/feedback">Git Info (Feedback)</a></p>
+</li>
+<li>
+<p><a href="https://testing.dukecon.org/health/feedback">Health Check (Feedback)</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Production:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://programm.javaland.eu/conferences">Overview of all conferences on Javaland server</a></p>
+</li>
+<li>
+<p><a href="https://programm.javaland.eu/2019/rest/conferences/javaland2019">JavaLand 2019</a></p>
+</li>
+<li>
+<p><a href="https://programm.javaland.eu/2018/rest/conferences/javaland2018">JavaLand 2018</a></p>
+</li>
+<li>
+<p><a href="https://programm.javaland.eu/2017/rest/conferences/javaland2017">JavaLand 2017</a></p>
+</li>
+<li>
+<p><a href="https://programm.javaland.eu/2016/rest/conferences/javaland2016">JavaLand 2016</a></p>
+</li>
+<li>
+<p><a href="https://programm.javaland.eu/info/server">Javaland Git Info (Server)</a></p>
+</li>
+<li>
+<p><a href="https://programm.javaland.eu/health/server">Javaland Health Check (Server)</a></p>
+</li>
+<li>
+<p><a href="https://programm.javaland.eu/info/feedback">Javaland Git Info (Feedback)</a></p>
+</li>
+<li>
+<p><a href="https://programm.javaland.eu/health/feedback">Javaland Health Check (Feedback)</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Clients:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>HTML5:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://programm.javaland.eu/2019/">JavaLand 2019 (Production)</a></p>
+</li>
+<li>
+<p><a href="https://programm.javaland.eu/2018/">JavaLand 2018 (Production)</a></p>
+</li>
+<li>
+<p><a href="https://programm.javaland.eu/2017/">JavaLand 2017 (Production)</a></p>
+</li>
+<li>
+<p><a href="https://programm.javaland.eu/2016/">JavaLand 2016 (Production)</a></p>
+</li>
+<li>
+<p><a href="https://latest.dukecon.org/javaland/2019/">JavaLand 2019 (latest with live data)</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="https://dev.dukecon.org/jenkins/job/dukecon_android/job/develop/lastSuccessfulBuild/artifact/mobile-ui-javaland-debug.apk">Android App</a></p>
+</li>
+<li>
+<p><a href="https://dev.dukecon.org/jenkins/job/dukecon_cordova_develop/ws/platforms/android/build/outputs/apk/android-debug.apk">Cordova Client</a> (Currently Android only)</p>
+</li>
+<li>
+<p><a href="https://openrepos.net/content/andywuest/sailcon">SailfishOS App</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Authentication &amp; Authorisation (via <a href="https://keycloak.jboss.org">Keycloak</a>):</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://keycloak.dukecon.org/auth/realms/dukecon-developer/account">Developer</a> (<a href="http://localhost:8080" class="bare">http://localhost:8080</a>)</p>
+</li>
+<li>
+<p><a href="https://keycloak.dukecon.org/auth/realms/dukecon-latest/account">Latest</a></p>
+</li>
+<li>
+<p><a href="https://keycloak.dukecon.org/auth/realms/dukecon-testing/account">Testing</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Infrastructure:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://dev.dukecon.org/jenkins/">Jenkins</a></p>
+</li>
+<li>
+<p><a href="https://dev.dukecon.org/nexus/">Nexus</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div></p>
+            </div>
+
+            <div id="push"></div>
+        </div>
+
+        
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2021 | Mixed with Bootstrap v3.3.7 | Baked with JBake v2.6.4</p>
+      </div>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prettify.js"></script>
+
+
+
+    </body>
+</html>
